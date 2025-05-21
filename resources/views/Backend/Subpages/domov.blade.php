@@ -1,6 +1,17 @@
 @extends('backend.Layouts.layout')
 @section('title', 'Domov')
 
+
+<!-- takže toto je návod ako pridať texty na web:
+
+1. Pôjdeš na adresu http://127.0.0.1:8000/admin/database, kde vytovríš text
+    (vytvoril som jeden, máš ho pod tabuľkou, je to id 40, tvoj text bude mať iné ID)
+
+2. Zoberieš ID a vytvoriš link na to (poznámka na riadku 33)
+
+3. Následne pôjdeš na resources/views/Frontend/components/header kde je dalšia poznámka na riadku 15
+
+-->
 @section('body')
     <div class="container">
         <div class="row header-row mb-2">
@@ -19,56 +30,9 @@
         <div class="row content mb-2 py-3">
             <label for="">Sekcia 1</label>
             <div class="col-4">
+{{--        Nizšie je input, skopíruješ vložiš tam ID daného textu do atributu id="ID", ako to je urobene o riadok nižsie--}}
+{{--        Prosim stránku rozdel na sekcie a teda aj texty rozdel podla nich, vyššie je label kde je Sekcia 1, tak to prepiš na HEADER a vllož tam všetky texty ktoré su v headeri, nasledne vytvor dalsiu sekciu atd...        --}}
                 <x-links.link name="Text" type="text" id="4"></x-links.link>
-            </div>
-            <div class="col-4">
-                <x-links.link name="Text" type="text" id="5"></x-links.link>
-            </div>
-            <div class="col-4">
-                <x-links.link name="Text" type="text" id="6"></x-links.link>
-            </div>
-        </div>
-
-        <div class="row content mb-2 py-3">
-            <label for="">Sekcia 2</label>
-            <div class="col-4">
-                <x-links.link name="Fotografia" type="photo" id="9"></x-links.link>
-            </div>
-            <div class="col-8">
-                <x-links.link name="Text" type="text" id="7"></x-links.link>
-
-                <x-links.link name="Statistika1" type="text" id="8"></x-links.link>
-                <x-links.link name="Statistika1" type="text" id="9"></x-links.link>
-
-                <small class="mt-2" for="">Samotné body odeľte symbolom /, max 4 body</small>
-                <x-links.link name="Body" type="text" id="10"></x-links.link>
-            </div>
-
-        </div>
-
-        <div class="row content mb-2 py-3">
-            <label for="">Sekcia 3</label>
-            <div class="col-10">
-                <x-links.link name="Text" type="text" id="11"></x-links.link>
-            </div>
-            <div class="col-2">
-                <x-links.link name="Text" type="text" id="16"></x-links.link>
-            </div>
-
-            <div class="col-3">
-                <x-links.link name="Text" type="text" id="12"></x-links.link>
-            </div>
-            <div class="col-3">
-                <x-links.link name="Text" type="text" id="13"></x-links.link>
-            </div>
-            <div class="col-3">
-                <x-links.link name="Text" type="text" id="14"></x-links.link>
-            </div>
-            <div class="col-3">
-                <x-links.link name="Text" type="text" id="15"></x-links.link>
-            </div>
-            <div class="col-12">
-                <x-links.link name="Pozadie sekcie" type="photo" id="10"></x-links.link>
             </div>
         </div>
     </div>

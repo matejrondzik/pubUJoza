@@ -11,9 +11,16 @@
 
 
     <div class="container position-relative h-100 d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-duration="1000">
-        <!-- Subtitle -->
-        <small class="text-uppercase text-light" style="letter-spacing:0.2em;">REŠTAURÁCIA</small>
+
+        <!-- POZNAMKA NA TVORENIE TEXTU -->
+        <!-- následne zoberieš ID textu ktoré si vytvoril a vložiš tento kod čo vidiš nižsie, s tým že číslo nahradis svojim ID textu -->
+        <!-- TAKTO TO SPRAV PRE KAŽDÝ TEXT KTORÝ SA NA STRÁNKE NACHÁDZA, OKREM NAVBARU -->
+        <!-- urob to aj pre patičku ale v admine je na to špecialna podstranka http://127.0.0.1:8000/admin/subpage/paticka -->
+        <small class="text-uppercase text-light" style="letter-spacing:0.2em;">{{$text->find(40)->text1}}</small>
+
+
         <!-- Main Title -->
+
         <h1 class="display-1 fw-bold mb-3 lobster" style="font-family: 'Switzer', sans-serif;">Pub u Joža</h1>
         <!-- Address -->
         <p class=" text-uppercase mb-1 headerPodnadpis" style="letter-spacing:0.1em;">ANTONA BERNOLÁKA 2137/17</p>

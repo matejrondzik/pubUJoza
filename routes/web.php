@@ -60,17 +60,10 @@ Route::prefix('/admin/')->middleware('auth')->group(function (){
     Route::resource('texts', TextController::class);
     Route::resource('photos', PhotoController::class);
 
-    Route::prefix('/modules/')->group(function (){
-        Route::resource('employees', EmployeesController::class);
-        Route::resource('documents', DocumentController::class);
-    });
 
     Route::prefix('/subpage/')->group(function (){
         Route::get('/domov', function(){ return view('backend.Subpages.domov'); });
 
-        Route::get('/onas', function(){ return view('backend.Subpages.onas'); });
-        Route::get('/dokumenty', function(){ return view('backend.Subpages.dokumenty'); });
-        Route::get('/kontakt', function(){ return view('backend.Subpages.kontakt'); });
         Route::get('/paticka', function(){ return view('backend.Subpages.footer'); });
 
     });

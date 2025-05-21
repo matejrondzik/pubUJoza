@@ -90,7 +90,7 @@ use App\Models\User;
 
 {{--SCRIPTS--}}
 <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
-<script src="{{ asset('js/backend/script.js') }}"></script>
+{{--<script src="{{ asset('js/backend/script.js') }}"></script>--}}
 
 @yield('script')
 
