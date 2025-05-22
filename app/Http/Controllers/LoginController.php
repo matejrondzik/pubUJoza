@@ -26,7 +26,7 @@ class LoginController extends Controller
 
         if (Auth::attempt($credentials)) {
             $request->session()->regenerate();
-            return redirect()->intended(route('employees.index'))
+            return redirect()->intended(route('admin.index'))
                 ->with('success', 'Prihlásenie úspešné!');
         }
         return back()->withErrors(['error' => 'Nesprávne prihlasovacie údaje'])
