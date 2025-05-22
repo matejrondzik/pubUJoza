@@ -32,7 +32,7 @@
             <div class="col-4">
 {{--        Nizšie je input, skopíruješ vložiš tam ID daného textu do atributu id="ID", ako to je urobene o riadok nižsie--}}
 {{--        Prosim stránku rozdel na sekcie a teda aj texty rozdel podla nich, vyššie je label kde je Sekcia 1, tak to prepiš na HEADER a vllož tam všetky texty ktoré su v headeri, nasledne vytvor dalsiu sekciu atd...        --}}
-                <x-links.link name="Text" type="text" id="4"></x-links.link>
+                <x-links.link name="Text" type="text" id="40"></x-links.link>
             </div>
         </div>
     </div>
