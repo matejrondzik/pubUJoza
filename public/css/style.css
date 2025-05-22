@@ -116,7 +116,7 @@ html, body {
     /* najprv farebný overlay, potom obrázok */
     background-image:
         linear-gradient(rgba(246, 245, 250, 0.7), rgba(246, 245, 250, 0.7)),
-        url("/images/woodBG.jpeg");
+        url("/images/tornPaper.png");
     background-size: cover;
     background-position: center;
 }
@@ -247,7 +247,6 @@ html, body {
 .slide {
     scroll-snap-align: center;
     flex: 0 0 30%;
-    aspect-ratio: 210 / 297;
     padding: 0 1rem;
 }
 .slide img {
@@ -304,4 +303,9 @@ html, body {
 }
 .images-row-container::-webkit-scrollbar {
     display: none;             /* Chrome, Safari, Opera */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: brightness(0) invert(1); /* urobí šípky biele */
 }

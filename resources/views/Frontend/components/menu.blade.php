@@ -52,36 +52,48 @@
 
 
     <!-- Image Zoom Modal -->
-    <div class="modal fade" id="imageModal" tabindex="-1">
-        <div class="modal-dialog modal-dialog-centered modal-lg" style="max-width: 800px;">
-            <div class="modal-content bg-transparent border-0">
-                <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-3" data-bs-dismiss="modal"></button>
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content bg-transparent border-0 position-relative">
+                <!-- Zatváracie tlačidlo -->
+                <button type="button"
+                        class="btn-close btn-close-white position-absolute top-0 end-0 m-3"
+                        data-bs-dismiss="modal"
+                        aria-label="Zatvoriť"
+                style="z-index: 5">
+                </button>
+
+                <!-- Carousel -->
                 <div id="modalCarousel" class="carousel slide" data-bs-interval="false">
                     <div class="carousel-inner">
                         @foreach($slides as $index => $img)
                             <div class="carousel-item {{ $index == 0 ? 'active' : '' }}">
-                                <img src="{{ $img }}" class="d-block img-fluid mx-auto" style="max-height: 90vh;" alt="Menu {{ $index + 1 }}">
+                                <img src="{{ $img }}"
+                                     class="d-block mx-auto img-fluid"
+                                     style="object-fit: contain; max-height: 90vh; width: auto;"
+                                     alt="Menu {{ $index + 1 }}">
                             </div>
                         @endforeach
                     </div>
-                    <button
-                        class="carousel-control-prev position-absolute top-50 start-0 translate-middle-y"
-                        type="button"
-                        data-bs-target="#modalCarousel"
-                        data-bs-slide="prev"
-                    >
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
+
+                    <!-- Šípka vľavo -->
+                    <button class="carousel-control-prev position-absolute top-50 start-0 translate-middle-y"
+                            type="button"
+                            data-bs-target="#modalCarousel"
+                            data-bs-slide="prev"
+                            style="width: 4rem;">
+                        <span class="carousel-control-prev-icon white-arrow" aria-hidden="true"></span>
+                        <span class="visually-hidden">Predchádzajúci</span>
                     </button>
 
-                    <button
-                        class="carousel-control-next position-absolute top-50 end-0 translate-middle-y"
-                        type="button"
-                        data-bs-target="#modalCarousel"
-                        data-bs-slide="next"
-                    >
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
+                    <!-- Šípka vpravo -->
+                    <button class="carousel-control-next position-absolute top-50 end-0 translate-middle-y"
+                            type="button"
+                            data-bs-target="#modalCarousel"
+                            data-bs-slide="next"
+                            style="width: 4rem;">
+                        <span class="carousel-control-next-icon white-arrow" aria-hidden="true"></span>
+                        <span class="visually-hidden">Ďalší</span>
                     </button>
                 </div>
             </div>

@@ -1,4 +1,4 @@
-<section id="denne-menu" class="woodBG pb-5">
+<section id="denne-menu" class="woodBG pt-3 pb-5">
     <div class="container">
         <div class="row" data-aos="fade-down" data-aos-duration="1000">
             <!-- Section Title with lines prepared -->
@@ -15,7 +15,7 @@
         </div>
         <!-- Static Menu Items with Lorem Ipsum -->
         <div class="container">
-        <div class="row">
+            <div class="row">
             <div class="col-md-6" data-aos="fade-right" data-aos-duration="1000">
                 <div class="item-grid mb-4">
                     <div class="title">Lorem ipsum dolor sit</div>
@@ -69,22 +69,22 @@
                 </div>
             </div>
         </div>
+    </div>
+    <div class="row mt-5" data-aos="fade-up" data-aos-duration="1000">
+        <!-- Order Buttons -->
+        <p class="text-center text-uppercase mb-3">Objednať cez:</p>
+        <div class="d-flex flex-column flex-md-row justify-content-center gap-3">
+            <a href="https://wolt.com/sk/svk/zilina/restaurant/pub-u-joza" target="_blank"
+               class="w-auto btn btn-dark rounded-pill px-5 py-2 d-flex align-items-center justify-content-between">
+                WOLT.COM <img src="{{ asset('images/wolt-logo.png') }}" alt="Wolt" class="ms-2"
+                              style="height: 1.5rem;">
+            </a>
+            <a href="https://www.bistro.sk/restauracia/pub-u-joza" target="_blank"
+               class="w-auto btn btn-dark rounded-pill px-5 py-2 d-flex align-items-center justify-content-between">
+                BISTRO.SK <img src="{{ asset('images/bistro-logo.png') }}" alt="Bistro.sk" class="ms-2"
+                               style="height: 1.5rem;">
+            </a>
         </div>
-        <div class="row mt-5" data-aos="fade-up" data-aos-duration="1000">
-            <!-- Order Buttons -->
-            <p class="text-center text-uppercase mb-3">Objednať cez:</p>
-            <div class="d-flex flex-column flex-md-row justify-content-center gap-3">
-                <a href="https://wolt.com/sk/svk/zilina/restaurant/pub-u-joza" target="_blank"
-                   class="w-auto btn btn-dark rounded-pill px-5 py-2 d-flex align-items-center justify-content-between">
-                    WOLT.COM <img src="{{ asset('images/wolt-logo.png') }}" alt="Wolt" class="ms-2"
-                                  style="height: 1.5rem;">
-                </a>
-                <a href="https://www.bistro.sk/restauracia/pub-u-joza" target="_blank"
-                   class="w-auto btn btn-dark rounded-pill px-5 py-2 d-flex align-items-center justify-content-between">
-                    BISTRO.SK <img src="{{ asset('images/bistro-logo.png') }}" alt="Bistro.sk" class="ms-2"
-                                   style="height: 1.5rem;">
-                </a>
-            </div>
-        </div>
+    </div>
     </div>
 </section>
