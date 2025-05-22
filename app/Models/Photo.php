@@ -27,7 +27,7 @@ class Photo extends Model
     ];
 
     function getPath() {
-        return Storage::url( $this->photo_path);
+        return Storage::url($this->photo_path);
     }
     function getAlt() {
         return $this->description;
