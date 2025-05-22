@@ -1,5 +1,5 @@
 @extends('backend.Layouts.layout')
-@section('title', 'Domov')
+@section('title', 'Domo')
 
 
 <!-- takže toto je návod ako pridať texty na web:
