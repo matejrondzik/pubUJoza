@@ -18,34 +18,7 @@
 
 
     <div class="container py-5 " >
-
-            <div class="row content mb-2 py-3">
-                <label for="">Text O Nás</label>
-                <div class="col-12">
-                    <x-links.link name="Text" type="text" id="33"></x-links.link>
-                </div>
-            </div>
         <div class="row content mb-2 py-3">
-            <label for="">Sekcia 1</label>
-            <div class="col-12">
-                <x-links.link name="Text" type="text" id="23"></x-links.link>
-            </div>
-
-            <div class="row  mb-2 py-3">
-                <div class="col-12">
-                    <x-links.link name="Text" type="text" id="24"></x-links.link>
-                </div>
-            </div>
-            <div class="row  mb-2 py-3">
-                <div class="col-12">
-                    <x-links.link name="Text" type="text" id="25"></x-links.link>
-                </div>
-            </div>
-            <div class="row  mb-2 py-3">
-                <div class="col-12">
-                    <x-links.link name="Text" type="text" id="26"></x-links.link>
-                </div>
-            </div>
 
         </div>
     </div>
